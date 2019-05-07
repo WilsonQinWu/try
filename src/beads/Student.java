@@ -15,6 +15,7 @@ public class Student
       System.out.println(list.length);
 
       for (int i = 0; i < list.length; i++) {
+         list[i] = new Student();
          System.out.println("Enter student id: ");
          list[i].id = in.nextInt();
          System.out.println("Enter student name: ");
@@ -22,6 +23,4 @@ public class Student
          System.out.println("student id: " + list[i].id + " " + "student name:" + list[i].name);
       }
    }
-
-
 }
